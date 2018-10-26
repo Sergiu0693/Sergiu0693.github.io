@@ -35,12 +35,13 @@ function start()
          var my_worker = new Worker("calcul_prime.js");
          my worker.onmessage = function(e) {
 
-         document.getElementById("id=prime").innerHTML = e.data;
+
+         document.getElementById("id_prime").innerHTML = e.data;
 
 
 
-}
-
+                                           }
+  }
 function stop(){
 		clearInterval(id_timer);
 		document.getElementById("id_start").disabled=false;
