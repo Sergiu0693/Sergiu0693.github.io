@@ -33,7 +33,7 @@ function start()
 	id_timer = setInterval(deseneaza_cerc,10 ,context, canvas.width, canvas.height,alpha);
 
          var my_worker = new Worker("calcul_prime.js");
-         my worker.onmessage = function(e) {
+         my_worker.onmessage = function(e) {
 
 
          document.getElementById("id_prime").innerHTML = e.data;
